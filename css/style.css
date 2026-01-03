@@ -25,6 +25,7 @@ html {
 body {
   color: var(--white-color);
   background-color: var(--bg-color);
+  overflow: hidden;
 }
 
 header {
