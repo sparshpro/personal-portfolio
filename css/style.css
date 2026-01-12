@@ -96,10 +96,10 @@ nav a.active {
 }
 @keyframes hide-bars {
     0%{
-        transform: translateY(0);
+        transform: translateY(-100%);
     }
     100%{
-        transform: translateY(-100%);
+        transform: translateY(0);
     }
 }
 
@@ -110,10 +110,10 @@ nav a.active {
 
 @keyframes show-bars {
     0%{
-        transform: translateY(0%);
+        transform: translateY(0);
     }
     100%{
-        transform: translateY(100%);
+        transform: translateY(-100%);
     }
 }
 
@@ -169,13 +169,13 @@ section.active {
 
   /* Changes Font Line Stroke */
   -webkit-text-stroke: 0.07rem var(--main-color);
-  animation: display-text 16s linear infinite;
-  animation-delay: calc(-4s * var(--i));
+  animation: display-text 9s linear infinite;
+  animation-delay: calc(-3s * var(--i));
   white-space: nowrap;
 }
 
 @keyframes display-text {
-  25%,
+  33.33%,
   100% {
     display: none;
   }
@@ -189,7 +189,7 @@ section.active {
   color: var(--main-color);
   white-space: nowrap;
   overflow: hidden;
-  animation: fill-text 4s linear infinite;
+  animation: fill-text 3s linear infinite;
 }
 
 @keyframes fill-text {
