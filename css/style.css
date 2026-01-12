@@ -150,6 +150,7 @@ section.active {
   display: flex;
   align-items: center;
   gap: 5rem;
+  overflow: hidden;
 }
 
 .home-detail h1 {
