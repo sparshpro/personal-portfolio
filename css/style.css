@@ -20,12 +20,13 @@
 
 html {
   font-size: 62.5%; /* 16px * 62.5% = 10px  */
+  overscroll-behavior: none;
 }
 
 body {
   color: var(--white-color);
   background-color: var(--bg-color);
-  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 header {
@@ -150,7 +151,7 @@ section.active {
   display: flex;
   align-items: center;
   gap: 5rem;
-  overflow: hidden;
+
 }
 
 .home-detail h1 {
