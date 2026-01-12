@@ -323,11 +323,48 @@ section.active {
 .heading span {
   color: var(--main-color);
 }
+
+.services{
+   overflow: auto;
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--second-bg-color) transparent;
+
+}
+
+/* WebKit scrollbars */
+.services::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+.services::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.services::-webkit-scrollbar-thumb {
+  background: var(--second-bg-color);
+  border-radius: 1rem;
+  transition: background 0.2s ease;
+}
+
+/* Hover / focus states */
+.services:hover::-webkit-scrollbar-thumb,
+.services::-webkit-scrollbar-thumb:hover,
+.services:focus::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+/* Firefox: change color when hovering the list */
+.services:hover {
+  scrollbar-color: var(--main-color) transparent;
+}
 .services-container {
   display: grid;
   /* Responsive grid combination */
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
+ 
 }
 
 .services-container .services-box {
@@ -449,19 +486,37 @@ section.active {
   gap: 2rem;
   height: 45rem;
   overflow: auto;
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--second-bg-color) transparent;
 }
 
+/* WebKit scrollbars */
 .resume-list::-webkit-scrollbar {
   width: 0.7rem;
+  height: 0.7rem;
+}
+
+.resume-list::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .resume-list::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: var(--second-bg-color);
   border-radius: 1rem;
+  transition: background 0.2s ease;
 }
 
-.resume-list:hover::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
+/* Hover / focus states */
+.resume-list:hover::-webkit-scrollbar-thumb,
+.resume-list::-webkit-scrollbar-thumb:hover,
+.resume-list:focus::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+/* Firefox: change color when hovering the list */
+.resume-list:hover {
+  scrollbar-color: var(--main-color) transparent;
 }
 
 .resume-list .resume-item {
